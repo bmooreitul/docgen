@@ -13,38 +13,38 @@ go generate
 export GOARCH="amd64"
 export GOOS="darwin"
 export CGO_ENABLED=0
-go build -ldflags "-X github.com/sajidifti/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/sajidifti/docgen/cmd.Version=$TAG -X github.com/sajidifti/docgen/cmd.BuildDate=$DATE" -o bin/darwin_amd64 -v .
+go build -ldflags "-X github.com/bmooreitul/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/bmooreitul/docgen/cmd.Version=$TAG -X github.com/bmooreitul/docgen/cmd.BuildDate=$DATE" -o bin/darwin_amd64 -v .
 
 export GOARCH="arm64"
 export GOOS="darwin"
 export CGO_ENABLED=0
-go build -ldflags "-X github.com/sajidifti/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/sajidifti/docgen/cmd.Version=$TAG -X github.com/sajidifti/docgen/cmd.BuildDate=$DATE" -o bin/darwin_arm64 -v .
+go build -ldflags "-X github.com/bmooreitul/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/bmooreitul/docgen/cmd.Version=$TAG -X github.com/bmooreitul/docgen/cmd.BuildDate=$DATE" -o bin/darwin_arm64 -v .
 
 #LINUX
 export GOARCH="amd64"
 export GOOS="linux"
 export CGO_ENABLED=0
-go build -ldflags "-X github.com/sajidifti/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/sajidifti/docgen/cmd.Version=$TAG -X github.com/sajidifti/docgen/cmd.BuildDate=$DATE" -o bin/linux_amd64 -v
+go build -ldflags "-X github.com/bmooreitul/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/bmooreitul/docgen/cmd.Version=$TAG -X github.com/bmooreitul/docgen/cmd.BuildDate=$DATE" -o bin/linux_amd64 -v
 
 export GOARCH="arm64"
 export GOOS="linux"
 export CGO_ENABLED=0
-go build -ldflags "-X github.com/sajidifti/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/sajidifti/docgen/cmd.Version=$TAG -X github.com/sajidifti/docgen/cmd.BuildDate=$DATE" -o bin/linux_arm64 -v
+go build -ldflags "-X github.com/bmooreitul/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/bmooreitul/docgen/cmd.Version=$TAG -X github.com/bmooreitul/docgen/cmd.BuildDate=$DATE" -o bin/linux_arm64 -v
 
 export GOARCH="386"
 export GOOS="linux"
 export CGO_ENABLED=0
-go build -ldflags "-X github.com/sajidifti/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/sajidifti/docgen/cmd.Version=$TAG -X github.com/sajidifti/docgen/cmd.BuildDate=$DATE" -o bin/linux_386 -v
+go build -ldflags "-X github.com/bmooreitul/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/bmooreitul/docgen/cmd.Version=$TAG -X github.com/bmooreitul/docgen/cmd.BuildDate=$DATE" -o bin/linux_386 -v
 
 #WINDOWS
 export GOARCH="386"
 export GOOS="windows"
 export CGO_ENABLED=0
-go build -ldflags "-X github.com/sajidifti/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/sajidifti/docgen/cmd.Version=$TAG -X github.com/sajidifti/docgen/cmd.BuildDate=$DATE" -o bin/windows_386.exe -v
+go build -ldflags "-X github.com/bmooreitul/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/bmooreitul/docgen/cmd.Version=$TAG -X github.com/bmooreitul/docgen/cmd.BuildDate=$DATE" -o bin/windows_386.exe -v
 
 export GOARCH="amd64"
 export GOOS="windows"
 export CGO_ENABLED=0
-go build -ldflags "-X github.com/sajidifti/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/sajidifti/docgen/cmd.Version=$TAG -X github.com/sajidifti/docgen/cmd.BuildDate=$DATE" -o bin/windows_amd64.exe -v
+go build -ldflags "-X github.com/bmooreitul/docgen/cmd.GitCommit=$GIT_COMMIT -X github.com/bmooreitul/docgen/cmd.Version=$TAG -X github.com/bmooreitul/docgen/cmd.BuildDate=$DATE" -o bin/windows_amd64.exe -v
 
 echo "Build complete"
