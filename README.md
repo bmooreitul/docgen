@@ -7,7 +7,7 @@ Transform your postman collection to HTML/Markdown documentation
 
 #### Installation/Update on Mac/Linux
 ```bash
-curl https://raw.githubusercontent.com/thedevsaddam/docgen/v3/install.sh -o install.sh \
+curl https://raw.githubusercontent.com/bmooreitul/docgen/v3/install.sh -o install.sh \
 && sudo chmod +x install.sh \
 && sudo ./install.sh \
 && rm install.sh
@@ -15,7 +15,7 @@ curl https://raw.githubusercontent.com/thedevsaddam/docgen/v3/install.sh -o inst
 
 #### Uninstallation
 ```bash
-curl https://raw.githubusercontent.com/thedevsaddam/docgen/v3/uninstall.sh -o uninstall.sh \
+curl https://raw.githubusercontent.com/bmooreitul/docgen/v3/uninstall.sh -o uninstall.sh \
 && sudo chmod +x uninstall.sh \
 && sudo ./uninstall.sh \
 && rm uninstall.sh
